@@ -167,4 +167,14 @@ body {
   .cta-content {
     text-align: center; /* Center text within CTA */
   }
+
+  footer{
+    text-align: center;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Keep the navbar fixed at the top */
+    bottom: 0;
+    width: 100%;
+  }
   
