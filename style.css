@@ -77,11 +77,22 @@ body {
     text-align: center;
   }
 
+  .para{
+    font-size: 22px;
+  }
+
   h2{
     font-size: 44px;
     font-weight: 800;
     font-style: italic;
   }
+
+  .gradient-text {
+    background: linear-gradient(to left, #2d20df, #296bcf);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
 
   button{
     background-color: rgb(67, 67, 233);
@@ -95,4 +106,43 @@ body {
   button:hover{
     background-color: rgb(11, 11, 152);
     cursor: pointer;
+  }
+
+  .features-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow features to wrap to next line */
+    justify-content: space-between; /* Distribute features evenly */
+    margin: 20px auto;
+    max-width: 1000px; /* Set maximum width */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 10px; /* Add margin between features */
+    width: calc(33% - 20px); /* Calculate width based on 4 columns */
+    background-color: #fff; /* Light white background */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .feature img {
+    width: 300px; /* Adjust image width as needed */
+    margin-bottom: 15px; /* Add space between image and text */
+  }
+  
+  .feature-content {
+    text-align: center; /* Center text within feature */
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 20px; /* Adjust font size as needed */
+  }
+  
+  p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5;
   }
